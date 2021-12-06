@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!
+{% endblock %}
+
+{% block body %}
+	<pre>
+	{{ dump(links) }}
+    </pre>
+	{% for link in links %}
+		<h3>{{ link.name }}</h3>
+	{% endfor %}
+{% endblock %}
